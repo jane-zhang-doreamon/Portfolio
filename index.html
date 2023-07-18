@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COmpatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Zhang Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/dda79f3f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I'm <br> <span>Jane</span> Zhang</h1>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------ABOUT-------------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/jane.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Full stack software developer with an accounting background, bringing a unique perspective to problem-solving and process optimization. After a career gap, I pursued my passion for software development. Committed to continuous growth, I update my skills through courses and personal projects. Excited to contribute as a full stack developer, making a valuable impact.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Front-end</span><br>
+                JavaScript , TypeScript, React.js, Redux.js, React Query, CSS, Tailwind CSS, HTML
+              </li>
+              <li>
+                <span>Back-end</span><br>
+                Node.js, Restful API , SQL, Knex.js
+              </li>
+              <li>
+                <span>Others</span><br>
+                Excellent communication skills<br>
+                Fluent in English and Mandarin<br>
+                Collaboration<br>
+                Self-motivation
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Dev Academy Aotearoa</span><br>
+                <p class="period">March 2023 - July 2023</p>
+                Full Stack Software Developer (Trainee)
+              </li>
+              <li>
+                <span>Career Gap</span><br>
+                <p class="period">July 2020 - March 2023</p>
+                Full-time parenting
+              </li>
+              <li>
+                <span>Herman Brothers Transport Services Ltd</span><br>
+                <p class="period">July 2018 - July 2020</p> 
+                Accountant               
+              </li>
+              <li>
+                <span>JHN Investments Ltd</span><br>
+                <span>(Ex - Herman Brothers Transport Ltd)</span><br>
+                <p class="period">July 2018 - July 2020</p>
+                Accountant
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Dev Academy Aotearoa</span><br>
+                <p class="period">Mar 2023 - July 2023</p>
+                New Zealand Certificate in Applied Software Development Programme
+              </li>
+              <li>
+                <span>Massey University</span><br>
+                <p class="period">July 2015 - February 2018</p>
+                Bachelor of Accountancy
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------Portfilio------------------------ -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/neighbors.png">
+          <div class="layer">
+            <h3>Neighbors</h3>
+            <p>
+              Neighbors is a project born from my four-year experience living in a neighborhood where I knew very little about my neighbors. I aim to create an app that fosters a sense of community by connecting neighbors and facilitating information-sharing about the neighborhood. It will promote collaboration, local events, safety alerts, and support among residents, revitalizing neighborly bonds in our tech-driven world.
+            </p>
+            <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/Booklandia.png">
+          <div class="layer">
+            <h3>Booklandia</h3>
+            <p>
+              Booklandia is my first personal project, inspired by the cherished moments of reading books with my daughter. Each memory holds immense value, and I wish to preserve every little detail. Starting small, my vision is to create an app that allows users to store their reading histories, notes, and reviews. This project not only fulfills a personal desire but also serves as an excellent opportunity to apply and strengthen the skills I acquired during my time at the development academy.
+            </p>
+            <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn1">See more</a>
+    </div>
+  </div>
+
+  <!-- -------------------CONTACT------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>jiejanezhang2012@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>021022**012</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jane-jie-zhang/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jane-zhang-doreamon"><i class="fa-brands fa-square-github"></i></a>
+          </div>
+          <a href="images/Jane-Zhang-Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Jane Zhang 2023</p>
+    </div>
+  </div>
+  
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname) {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu")
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzKJ04IzLY1pnL2Kv9TyIP43pmclx-Dhi45VH5nQJHWv_IHQ3wJc3V53gVohu25MLxK/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Message sent successfully"
+    setTimeout(function(){
+      msg.innerHTML = ""
+    }, 5000)
+  form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
