@@ -198,20 +198,6 @@ nav ul li a:hover::after{
   margin-bottom: 20px;
 }
 
-/* link fa-solid fa-up-right-from-square style */
-/* .layer a{
-  margin-top: 20%;
-  color:#E76D57;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #F8F3EB;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-} */
-
 .layer a{
   margin-top: 20%;
   color:#E76D57;
