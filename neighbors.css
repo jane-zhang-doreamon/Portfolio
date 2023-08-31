@@ -68,7 +68,7 @@ h1 {
   font-size: 40px;
   display: flex;
   justify-content: center;
-  color: #df4e41;
+  color: #f18a81;
 }
 
 h2 {
@@ -100,16 +100,17 @@ section li {
 
 section a{
   margin-left: 5px;
-  color:#E76D57;
+  color:#f18a81;
   text-decoration: none;
   font-size: 25px;
   line-height: 45px;
-  background: #F8F3EB;
+  /* background: #F8F3EB; */
   width: 45px;
   height: 45px;
   border-radius: 50%;
   text-align: center;
 }
+
 
 section{
   width: 100%;
