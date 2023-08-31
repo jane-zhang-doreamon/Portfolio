@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COmpatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Zhang Portfolio</title>
+  <link rel="stylesheet" href="neighbors.css">
+  <script src="https://kit.fontawesome.com/dda79f3f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="Jane Logo"> 
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ---------------------Project Details-------------------- -->
+  <section>
+    <h1>Boba Buddies</h1>
+    
+    <div>
+      <h2>Introduction</h2>
+      <div class="answer">
+        <ul>
+          <p>
+            Upon completing our Dev Academy journey, we proactively formed a team to embark on the development of a project named "Boba Buddies." This ongoing endeavor entails the creation of a full-stack e-commerce application that serves as a platform for users to purchase boba drinks and share their reviews. Additionally, the project features an administrative interface designed for managing inventory and messages.
+          </p>        
+        <br>
+        <p>
+          This undertaking is not only a practical laboratory for applying and honing our acquired skills but also a ground-up, comprehensive exploration of full-stack development. Through this process, we are gaining invaluable real-world experience. Our overarching objective extends beyond the mere consolidation of technical expertise; we are committed to constructing a robust and sustainable platform.
+        </p>
+        
+        
+      </ul>
+      </div>
+      <h2>Technologies Used</h2>
+      <div class="answer">
+        <div class="tech">
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>React Router</li>
+            <li>React Query</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <ul>
+            <li>JavaScript</li>
+            <li>Auth0</li>
+            <li>Restful API</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <ul>
+            <li>Sqlite3</li>
+            <li> Knex.js</li>
+            <li>Superagent</li>
+            <li>Express.js</li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+    <div>
+      <h2>Features and Functionality</h2>
+      <div class="answer">
+        <ul>
+          <li>Seamless user registration and authentication facilitated through Auth0 integration.</li>
+          <li>Product pages offering detailed descriptions and an interactive review section.</li>
+          <li>Smooth shopping cart and secure checkout process for a convenient shopping experience.</li>
+          <li>Allow users to create a wish list and collect their favorite products.</li>
+          <li>Robust user review and rating system, promoting valuable feedback and interaction.</li>
+          <li>Dedicated admin interface designed to efficiently manage inventory levels and review information, ensuring content relevance, legality, and appropriateness.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>Development Process</h2>
+      <div class="answer">
+        <ul>
+          <p>Our development method could be considered a variation of Agile. </p><br>
+          <p>
+            We began with a thorough planning phase, using Figma to create wireframes for each page, establishing data table structures and relationships, agreeing on naming conventions, and outlining necessary database functions. Prior to entering the development phase, we compiled task tickets on Trello and assigned them to each team member. 
+          </p> <br>
+          <p>
+            During development, we each focused on our assigned tasks, holding daily standup meetings to discuss progress and address any challenges. Effective communication was maintained through our group chat. We engaged in pair programming to explore new technologies and collaboratively solve issues. Questions or suggestions regarding our application were raised throughout development, with the implementation of new features being carried out only after consensus was reached among all team members.
+          </p>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <a href="https://github.com/Boba-Buddies/boba-buddies-store">
+        View source code   
+        <i class="fa-brands fa-github"></i>
+      </a>
+      
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu")
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+<footer>
+  <!-- -------------------Copyright------------------------- -->
+  <div id="contact">
+    <div class="copyright">
+      <p>Copyright © Jane Zhang 2023</p>
+    </div>
+  </div>
+</footer>
+</html>
